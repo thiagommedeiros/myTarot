@@ -7,10 +7,20 @@
 
   .spread-cards
     margin-bottom: 33px
-    
 
-  h2
-    margin: 0 0 30px
+  h2,h3
+    margin: 0 0 20px
 
-  p
-    font-size: 1.4em
+  .description
+    display: inline-block
+    max-height: 0px
+    overflow: hidden
+    transition: max-height 0.5s ease-in-out
+
+    p
+      font-size: 1.4em
+
+  &.showFullDescription
+    .description
+      max-height: 999px
+      transition: max-height 0.5s ease-in-out
