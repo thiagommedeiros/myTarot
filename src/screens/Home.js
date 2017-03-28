@@ -17,14 +17,19 @@ const Home = ({ chooseSpreadType, navigate }) => {
     <div>
       <h1 className="page-title">Escolha o tipo de tiragem:</h1>
       <Row>
-        <Col lg="3" md="4" sm="6" xs="12" offset={['lg', 3]}>
+        <Col lg="3" md="4" sm="4" xs="12" offset={['lg', 2]}>
           <button className="button-spread-type" onClick={() => handleChoice('simple')}>
             <SpreadCardsContainer spreadType="simple" showSpreadDescription={true} />
           </button>
         </Col>
-        <Col lg="3" md="4" sm="6" xs="12">
+        <Col lg="3" md="4" sm="4" xs="12">
           <button className="button-spread-type" onClick={() => handleChoice('period')}>
             <SpreadCardsContainer spreadType="period" showSpreadDescription={true} />
+          </button>
+        </Col>
+        <Col lg="3" md="4" sm="4" xs="12">
+          <button className="button-spread-type" onClick={() => handleChoice('cross')}>
+            <SpreadCardsContainer spreadType="cross" showSpreadDescription={true} />
           </button>
         </Col>
       </Row>
