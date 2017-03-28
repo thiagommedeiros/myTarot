@@ -16,5 +16,17 @@ export const spreadTypes = {
       1: 'Presente',
       2: 'Futuro'
     }
+  },
+  cross: {
+    amountCards: 5,
+    className: 'cross',
+    description: '',
+    cardsFeatures: {
+      0: 'Positivo',
+      1: 'Negativo',
+      2: 'Caminho',
+      3: 'Resultado',
+      4: 'Síntese'
+    }
   }
 }
